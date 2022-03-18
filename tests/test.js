@@ -87,7 +87,6 @@ let expectedV3 = `
 }
 .aspect-none::before {
   content: "";
-  display: block;
   padding-bottom: 0
 }
 .aspect-none > * {
