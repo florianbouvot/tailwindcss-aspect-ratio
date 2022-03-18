@@ -50,8 +50,6 @@ const aspectRatio = plugin(
             {
               ...baseStyles,
               '--tw-aspect-w': value,
-            },
-            {
               '::before': pseudoStyles,
             },
             {
@@ -71,12 +69,6 @@ const aspectRatio = plugin(
     const baseSelectors = Object.entries(values)
       .map(([key, value]) => {
         return `.${e(`aspect-w-${key}`)}`
-      })
-      .join(',\n')
-
-    const pseudoSelectors = Object.entries(values)
-      .map(([key, value]) => {
-        return `.${e(`aspect-w-${key}`)}::before`
       })
       .join(',\n')
 
